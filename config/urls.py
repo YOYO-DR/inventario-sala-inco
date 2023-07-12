@@ -16,8 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 
+from apps.inventario.views import InicioView
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('',InicioView.as_view(),name="inicio"),
     path('user/',include('apps.user.urls')),
     path('inventario/',include('apps.inventario.urls')),
 ]
