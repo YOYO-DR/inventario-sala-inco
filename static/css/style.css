@@ -1,0 +1,14 @@
+.menu_lateral {
+  position: fixed; 
+  top: auto;
+  left: 0;
+
+  transition: transform .5s ease;
+  transform: translateX(-100%);
+}
+.es_activo {
+transform: translateX(0%);
+}
+.container{
+  min-height: 100vh;
+}
